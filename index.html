@@ -36,14 +36,14 @@
 
     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
       /* For portrait layouts only */
-      #profile-img {
+      #profile-img-panel {
         display: none;
       }
     }
 
     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
       /* For landscape layouts only */
-      #profile-img {
+      #profile-img-panel {
         display: block;
       }
     }
@@ -101,7 +101,7 @@
               <a href="https://www.behance.net/quanl_" target="_blank"><i class="fab fa-behance-square"></i></a>
             </div>
           </div>
-          <div data-aos="fade-right" class="column
+          <div id="profile-img-panel" data-aos="fade-right" class="column
           is-10-mobile is-offset-1-mobile
           is-10-tablet is-offset-1-tablet
           is-4-desktop is-offset-1-desktop
