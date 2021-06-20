@@ -1,1 +1,843 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./assets/lehongquan.svg" rel="shortcut icon" type="image/png">
+  <title>Hong-Quan, Le | Front-end Web Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.css">
+
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/personal2.css">
+  <script async type="text/javascript" src="js/bulma.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <style>
+    @media(max-width: 500px) {
+      .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button is-primary is-outlined is-rounded" href="contact.html">
+            <img src="./assets/waving-hand.svg" style="margin-right: 10px"/>
+            Say Hello!
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered reverse-columns">
+          <div class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd" data-aos="fade-down">
+            <p>Hello! I am</p>
+            <h1 class="title is-1">
+              Hong-Quan, Le
+            </h1>
+            <h2 class="subtitle is-3">
+              A front-end web developer.
+            </h2>
+            <div class="buttons">
+              <a href="contact.html" class="button" id="btn-hire">Contact Me</a>
+              <a href="/" class="button" id="btn-resume">My Resume</a>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/lehongquanvn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://bitbucket.org/learningarea/workspace/projects/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.behance.net/quanl_" target="_blank"><i class="fab fa-behance-square"></i></a>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="assets/lehongquan.svg" alt="Hong-Quan, Le | Front-end Web Developer">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section has-text-centered" id="about">
+    <div class="container is-narrow">
+      <!-- Title -->
+      <div class="section-heading">
+        <h3 class="title is-3">Passionate about Web Design, 3D World and animating things</h3>
+        <div class="container">
+          <p>As a front-end web developer, I’ve done several projects related to
+            web development and interactive augmented reality content to
+            create digital products for both business and consumer use.</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column" style="border-bottom: 0px solid #E6ECF8; border-right: 1px solid #E6ECF8;">
+              <i class="fas fa-laptop-code"></i>
+              <h1 class="title is-size-4 is-spaced">Front-end Developer</h1>
+              <p>Develop things from scratch, and animate the things.</p>
+              <p class="list-title has-text-primary">Languages I speak:</p>
+              <p>JavaScript, HTML, CSS, Sass</p>
+              <p class="list-title has-text-primary">Dev Tools</p>
+              <ul>
+                <li>WebStorm</li>
+                <li>Brackets</li>
+                <li>Visual Studio Code</li>
+                <li>Node.js</li>
+                <li>Codepen</li>
+                <li>Bitbucket</li>
+                <li>GitHub</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
+            <div class="column" style="border-bottom: 0px solid #E6ECF8; border-right: 1px solid #E6ECF8;">
+              <i class="fas fa-vr-cardboard"></i>
+              <h1 class="title is-size-4 is-spaced">Augmented Reality</h1>
+              <p>Bring the magic from ideas to the real life.</p>
+              <p class="list-title has-text-primary">Languages I speak:</p>
+              <p>JavaScript, C#</p>
+              <p class="list-title has-text-primary">Dev Tools:</p>
+              <ul>
+                <li>WebStorm</li>
+                <li>Unity 3D</li>
+              </ul>
+              <p class="list-title has-text-primary">Libraries:</p>
+              <ul>
+                <li>three.js</li>
+                <li>ARToolkit</li>
+                <li>Vuforia</li>
+                <li>ARCore</li>
+                <li>Adobe Mixamo</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="fas fa-pencil-ruler"></i>
+              <h1 class="title is-size-4 is-spaced">UI & UX Design</h1>
+              <p>Love clean design patterns, minimal designs and thoughtful interactions.</p>
+              <p class="list-title has-text-primary">Things I enjoy:</p>
+              <p>UI, UX, Interaction, Web, Mobile</p>
+              <p class="list-title has-text-primary">Design Tools:</p>
+              <ul>
+                <li>Adobe XD</li>
+                <li>Zeplin</li>
+                <li>Pen &amp; Paper</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section has-text-centered" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-3">Skill set</h3>
+        <div class="container">
+          <p>Building the right skill set of front-end web developer and
+            interactive augmented reality content.</p>
+        </div>
+      </div>
+
+      <div class="columns has-same-height is-gapless">
+        <div class="column">
+          <div class="card">
+            <div class="card-content skills-content">
+              <div class="content">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>HTML</strong>
+                        <span>90%</span>
+                        <br>
+                        <progress class="progress is-dark" value="90" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>JavaScript</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>CSS</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>jQuery</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="70" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Node.js</strong>
+                        <span>70%</span>
+                        <br>
+                        <progress class="progress is-dark" value="70" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>npm</strong>
+                        <span>60%</span>
+                        <br>
+                        <progress class="progress is-dark" value="60" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content skills-content">
+              <div class="content">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>WebGL</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Three.js</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Unity3D</strong>
+                        <span>50%</span>
+                        <br>
+                        <progress class="progress is-dark" value="50" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>ARToolkit</strong>
+                        <span>45%</span>
+                        <br>
+                        <progress class="progress is-dark" value="45" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Vuforia</strong>
+                        <span>45%</span>
+                        <br>
+                        <progress class="progress is-dark" value="45" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Adobe XD</strong>
+                        <span>80%</span>
+                        <br>
+                        <progress class="progress is-dark" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-3">My Works</h3>
+      <h4 class="subtitle is-5">Here are few projects I’ve worked on recently. Want to see more? <a href="#">Email me.</a></h4>
+    </div>
+    <section class="container">
+      <div class="columns features has-same-height">
+        <!-- 3D Editor -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/9184.jpg" alt="3D Editor">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>3D Editor</h4>
+                <p>
+                  A web tool to view, customize and publish 3D content as a WebAR application using Three.js and Letsee SDK.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Three.js</span>
+                <span class="button is-link modal-button" data-target="modal-image2">WebGL</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LetseeSDK</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Hyundai Motor Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- EMC -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/emergence.svg" alt="EMC">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>EMC</h4>
+                <p>
+                  An visualization WebAR application is developed as a first-aid guideline so that users
+                  can easily followed.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Three.js</span>
+                <span class="button is-link modal-button" data-target="modal-image2">WebGL</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LetseeSDK</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Yonsei University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- AR Brochure -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/lgconfinity.png" alt="AR Brochure" style="margin-top: 40px">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4><a href="https://www.letsee.io/case-brochure/" target="_blank">AR Brochure</a></h4>
+                <p>
+                  An advertisement solution for new product of LG Electronics company which using an
+                  interactive WebAR application.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Three.js</span>
+                <span class="button is-link modal-button" data-target="modal-image2">WebGL</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LetseeSDK</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LG Electronics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columns features has-same-height">
+        <!-- The Last Supper -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/the-last_supper-1280-1200x675.jpg" alt="The Last Supper">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4><a href="https://www.letsee.io/case-lastsupper/" target="_blank">The Last Supper</a></h4>
+                <p>
+                  A new intuitive way to learn about history and geography through WebAR in museums and exhibitions.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LetseeSDK</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Museums</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Exhibitions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- EarPhone 3D -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/site_sony@2x.png" alt="Sony Earphone">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4><a href="https://www.letsee.io/case-earphone/" target="_blank">Sony Earphone</a></h4>
+                <p>
+                  Virtually showcase the product to improve digital and offline sales.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Three.js</span>
+                <span class="button is-link modal-button" data-target="modal-image2">WebGL</span>
+                <span class="button is-link modal-button" data-target="modal-image2">LetseeSDK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- ARAI -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/Artificial-intelligence.svg" alt="ARAI" class="modal-button" data-target="modal-image4">
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card2">
+              <div class="content">
+                <h4 style="font-size: 1rem"><a href="https://www.youtube.com/watch?v=zlmVpUgBdew" target="_blank">Seamless Multi-modal Interaction Framework for Intelligent Virtual Agents</a></h4>
+                <p>An AR application with AI character which can behave like human being, perform user’s commands and be a tour guide in the museum.</p>
+                <span class="button is-link modal-button" data-target="modal-image2">Mixed Reality</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Artificial Intelligent</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Unity3D</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columns features has-same-height">
+        <!-- 3D Geometry -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/geometry-big.svg" alt="3D Geometry">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4><a href="https://youtu.be/pc6-SOYbz2k" target="_blank">3D Geometry</a></h4>
+                <p>A web application which supports dynamic modifications and interactions for students to learn Geometry.</p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebAR</span>
+                <span class="button is-link modal-button" data-target="modal-image2">ARToolkit</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Leap Motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Weight Perception -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="assets/dumbell.jpg" alt="Weight Perception" class="modal-button" data-target="modal-image4">
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card2">
+              <div class="content">
+                <h4>Weight Perception</h4>
+                <p>A Virtual Reality application that supports patients are able to train themselves to recover their functionality after being heart-stroke.</p>
+                <span class="button is-link modal-button" data-target="modal-image2">Virtual Reality</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Unity3D</span>
+                <span class="button is-link modal-button" data-target="modal-image2">Kinect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mixed Reality Lab -->
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="./assets/mixed-reality-lab.png" alt="Mixed Reality Lab" class="modal-button" data-target="modal-image4">
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card2">
+              <div class="content">
+                <h4><a href="https://mrlab.imrc.kist.re.kr">Mixed Reality Lab</a></h4>
+                <p>A simple website for Mixed Reality Lab (MRL) in KIST.</p>
+                <span class="button is-link modal-button" data-target="modal-image2">WebApp</span>
+                <span class="button is-link modal-button" data-target="modal-image2">HTML5</span>
+                <span class="button is-link modal-button" data-target="modal-image2">CSS3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="view-all-works">
+        <a class="button" id="view-git" href="https://bitbucket.org/learningarea/workspace/projects/" target="_blank">
+          <i class="fab fa-github"></i>View all my works
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-3">My Side Projects</h3>
+        <h4 class="subtitle is-5">Building my own side projects is the best way to learn the new things.</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns has-same-height">
+          <div class="column is-4">
+            <!-- Resume & Portfolio -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title">Resume & Portfolio</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-info">WebApp</span>
+                    <span class="tag is-warning">BULMA</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/Resume-bro.svg" style="width: 70%;" alt="Resume & Portfolio">
+                </figure>
+                <p class="p-info">
+                  Making a template for Resume and Portfolio with clean design patterns and minimal designs.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a class="off card-footer-item"><i class="fas fa-tools"></i>In development</a>
+              </footer>
+            </div>
+  
+            <!-- Incentivised Fridge -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title"><a style="color: #6A2DED" href="https://www.behance.net/gallery/121899247/Incentivised-Fridge" target="_blank">Incentivised Fridge</a></span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-primary">UIUX</span>
+                    <span class="tag is-danger">AdobeXD</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/fridge.jpg" alt="Smart Fridge">
+                </figure>
+                <p class="p-info">
+                  A mobile application which provides a convenient way for users to keep track the food inventory, be prepared the food and recipes more easily.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a class="on card-footer-item" href="https://www.behance.net/gallery/121899247/Incentivised-Fridge" target="_blank"><i class="fas fa-search"></i>View Project</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-4">
+            <!-- Shoes Store -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title">Shoes Store</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-info">WebApp</span>
+                    <span class="tag is-warning">Three.js</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/sneakers.jpg" style="" alt="Shoes Store">
+                </figure>
+                <p class="p-info">
+                  A simple web application which helps you to view your favorite pair of shoes as augmented reality.
+                  You also click-to-buy with simple tap.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a class="off card-footer-item"><i class="fas fa-tools"></i>In development</a>
+              </footer>
+            </div>
+            
+            <!-- The Tables -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title"><a style="color: #6A2DED" href="https://www.behance.net/gallery/121896751/The-Tables" target="_blank">The Tables</a></span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-primary">UIUX</span>
+                    <span class="tag is-danger">AdobeXD</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/export.jpg">
+                </figure>
+                <p class="p-info">
+                  A simple app for booking tables, ordering and tracking food.
+                  A design concept of Food Ordering application. Users are able to book tables,
+                  order and track their food.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a class="on card-footer-item" href="https://www.behance.net/gallery/121896751/The-Tables" target="_blank"><i class="fas fa-search"></i>View Project</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-4">
+  
+            <!-- One Word Everyday -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title"><a style="color: #6A2DED" href="https://www.behance.net/gallery/121899709/One-Word-Everyday" target="_blank">One Word Everyday</a></span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-primary">UIUX</span>
+                    <span class="tag is-danger">AdobeXD</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/word-of-the-day.jpg" alt="One Word Everyday">
+                </figure>
+                <p class="p-info">
+                  A design concept to help users learn new words and definitions every day.
+                  The designs contains: Word Of the Day, Phrase Of the Day and Flashcard.
+                </p>
+                <br>
+              </div>
+              <footer class="card-footer">
+                <a class="off card-footer-item"><i class="fas fa-tools"></i>In development</a>
+              </footer>
+            </div>
+            
+            <!-- WebAR for Disabled -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="portfolio-item-title" style="font-size: 12px !important;">WebAR for Disabled</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-info">WebApp</span>
+                    <span class="tag is-warning">LeapMotion</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-4by2">
+                  <img src="assets/Desk05212104.jpg" alt="WebAR for Disabled">
+                </figure>
+                <p class="p-info">
+                  A simple web app using hand gestures for disabled to control web browser.
+                </p>
+                <br>
+              </div>
+              <footer class="card-footer">
+                <a class="off card-footer-item"><i class="fas fa-power-off"></i>Shutdown in 2014</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Skills -->
+   <section class="section" id="personal-skills">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-laptop-code"></i><br>
+          Web design experience
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-smile-wink"></i><br>
+          Satisfied clients
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-code"></i><br>
+          Command on coding
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-head-side-brain"></i><br>
+          Self-motivated person
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-lightbulb-on"></i><br>
+          Creative and perseverant
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="my-item">
+          <i class="fad fa-users-crown"></i><br>
+          Good communicator
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Outline -->
+  <section id="outline" class="section call-to-action is-primary has-text-centered">
+    <div class="container is-narrow">
+      <div class="box">
+        <div class="columns level">
+          <div class="column level-item">
+            <h1 class="title">Just say hi!</h1>
+          </div>
+          <div class="column level-item">
+            <p>Interested in working together?<br>Let's do it!</p>
+          </div>
+          <div class="column level-item">
+            <a class="button is-primary is-outlined is-rounded is-medium" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="media-center">
+        <a class="logo" href="/"></a>
+      </div>
+      <p id="highlight">
+        I’m always open to discuss your project
+        and talk about new things.
+      </p>
+      <div class="column is-8 is-offset-4">
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+                <span class="icon">
+                  <a style="color: white" href="https://www.linkedin.com/in/lehongquanvn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </span> &emsp;
+              <span class="icon">
+                  <a style="color: white" href="https://bitbucket.org/learningarea/workspace/projects/" target="_blank"><i class="fab fa-github"></i></a>
+                </span> &emsp;
+              <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span> &emsp;
+              <span class="icon">
+                  <a style="color: white" href="https://www.behance.net/quanl_" target="_blank"><i class="fab fa-behance-square"></i></a>
+                </span> &emsp;
+              <span class="icon">
+                  <i class="fas fa-phone-alt"></i>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <p id="copyright">
+        Copyright © 2021 QuanLe. All Rights Reserved.
+      </p>
+    </div>
+    <div class="made-by-bulma">
+      <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

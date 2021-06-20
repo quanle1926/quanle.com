@@ -1,0 +1,88 @@
+$fog: #F8F8F8;
+$purple: #6A2DED;
+$dark-purple: #151D38;
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: calc(3.25rem + 20px);
+  }
+
+  .hero.is-fullheight {
+    min-height: calc(100vh - 6.5rem - 40px);
+  }
+}
+
+.hero.is-fullheight {
+  .hero-body {
+    .title.is-2 {
+      color: $purple !important;
+      margin-top: 50px;
+    }
+    p {
+      font-weight: normal !important;
+    }
+    .column.is-5.has-text-left{
+      .social-media {
+        margin-top: 30px;
+        a {
+          margin-right: 10px;
+          color: $dark-purple;
+          font-size: 18px;
+          background: #eeeeee;
+        }
+        .fa-linkedin-in, .fa-github, .fa-envelope {
+          -webkit-transition: all .2s ease-in-out;
+        }
+        a:hover {
+          color: $purple;
+          text-decoration: none;
+        }
+      }
+
+      .field:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    .column.is-7.has-text-left {
+      .field {
+        .label {
+          font-weight: 400 !important;
+          color: rgba($dark-purple, 0.6);
+        }
+        input, textarea {
+          border-color: #E6ECF8;
+          box-shadow: none;
+          font-weight: 300;
+          color: $dark-purple;
+        }
+      }
+      .control {
+        font-size: 1rem;
+        box-sizing: border-box;
+        clear: both;
+         button {
+           background: none;
+           border: 2px solid $purple;
+           border-radius: 50px;
+           color: $purple;
+           font-weight: 400 !important;
+           font-size: 1.2rem;
+           font-family: 'Poppins', sans-serif;
+           transition: all .2s ease-in-out;
+           -webkit-transition: all .2s ease-in-out;
+           cursor: pointer;
+           text-align: center;
+           -webkit-box-pack: center;
+           justify-content: center;
+           width: 200px;
+           margin: 0 auto;
+           margin-top: 70px;
+         }
+        button:hover {
+          background: $purple;
+          color: $fog;
+        }
+      }
+    }
+  }
+}

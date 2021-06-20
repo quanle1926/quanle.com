@@ -1,0 +1,581 @@
+$fog: #F8F8F8;
+$purple: #6A2DED;
+$dark-purple: #151D38;
+
+html, body {
+  height: 100%;
+  background-color: $fog;
+  overscroll-behavior: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar.is-link {
+  background-color: $fog;
+  .navbar-menu.is-active {
+    background-color: $fog;
+  }
+  .navbar-brand {
+    .navbar-item {
+      margin-left: 20px !important;
+      img {
+        max-height: 3rem;
+      }
+    }
+    .navbar-item:hover {
+      background: none !important;
+    }
+  }
+  .navbar-burger {
+    color: $purple;
+  }
+  .navbar-item {
+    text-align: center;
+    background: $fog;
+    border: none;
+    a {
+      margin: 20px !important;
+      padding: 1.2rem;
+      border: 2px solid $purple;
+      background: none;
+      color: $purple !important;
+      text-align: center;
+      font-weight: 500 !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-stretch: normal;
+      font-style: normal;
+      border-radius: 30px;
+      text-decoration: none;
+      letter-spacing: normal;
+      height: 40px;
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+    }
+    .button.is-primary.is-outlined.is-rounded:hover {
+      background: $purple !important;
+      color: $fog !important;
+      border: 2px solid $purple;
+    }
+
+  }
+
+}
+
+.hero {
+  background: $fog !important;
+}
+
+.hero-body {
+
+  .container {
+    color: $dark-purple;
+    font-size: 1.4rem;
+    line-height: 2;
+
+    .title.is-1 {
+      color: #6A2DED !important;
+    }
+    .subtitle.is-3 {
+      color: #151D38 !important;
+      font-size: 1.2rem;
+      font-weight: 200;
+      line-height: 2;
+    }
+    .button {
+      margin-top: 40px;
+      margin-bottom: 0;
+      height: 50px;
+    }
+    #btn-hire, #btn-resume {
+      font-weight: 500 !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-stretch: normal;
+      font-style: normal;
+      border-radius: 30px;
+      border: 2px solid $purple;
+      text-decoration: none;
+      line-height: 40px;
+      letter-spacing: normal;
+      height: 40px;
+      width: 130px;
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+    }
+    #btn-hire {
+      background: $purple;
+      color: $fog;
+      border: 2px solid $purple;
+      margin-right: 10px;
+    }
+    #btn-resume {
+      color: $purple;
+      border: 2px solid $purple;
+      background: transparent;
+    }
+    #btn-resume:hover {
+      background: $purple;
+      color: $fog;
+      text-decoration: none;
+    }
+    #btn-hire:hover {
+      background: $fog;
+      color: $purple;
+    }
+
+    .social {
+      margin: 20px 0 0 0;
+      a {
+        background: #eeeeee;
+        border-radius: 2px;
+        color: $dark-purple;
+        font-size: 18px;
+        height: 32px;
+        width: 32px;
+        display: inline-flex;
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-decoration: none;
+        box-sizing: inherit;
+        margin-right: 10px;
+        -webkit-transition: all .2s ease-in-out;
+      }
+      a > i {
+        margin: 0 auto;
+      }
+      .fab {
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+      }
+      .fa-linkedin-in, .fa-github, .fa-envelope {
+        -webkit-transition: all .2s ease-in-out;
+      }
+      .fa-linkedin-in:hover, .fa-github:hover, .fa-envelope:hover {
+        color: $purple;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#about {
+  background: $purple;
+  h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: $fog;
+    font-weight: 700;
+  }
+  .section-heading {
+    .container {
+      color: $fog;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  }
+  .box {
+    .columns.is-centered {
+      margin: 0 auto;
+      .column {
+        i {
+          color: $purple;
+          text-decoration: none;
+          font-size: 28px;
+        }
+        .fas {
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+        }
+        .title.is-size-4.is-spaced {
+          font-weight: 600;
+          color: $dark-purple;
+          font-size: 1.2rem !important;
+        }
+        .list-title.has-text-primary {
+          font-weight: 600;
+          font-size: 1rem !important;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          margin-top: 50px;
+          margin-bottom: 10px;
+          color: $purple !important;
+        }
+
+      }
+    }
+  }
+  .column {
+    padding: 60px 35px;
+    ul {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+}
+
+#skills {
+  background: $purple;
+  h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: $fog;
+    font-weight: 700;
+  }
+  .section-heading {
+    .container {
+      color: $fog;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  }
+  .columns {
+    .column {
+      .card {
+        background: none;
+        box-shadow: none;
+        height: 500px !important;
+        .card-content {
+          article {
+            margin-bottom: 30px !important;
+          }
+          .media-content strong {
+            color: $fog;
+            font-weight: 600 !important;
+            float: left;
+            margin-bottom: 8px;
+          }
+          .media-content span {
+            color: $fog;
+            font-weight: 300 !important;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: $dark-purple;
+    font-weight: 700;
+  }
+  .subtitle.is-5{
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1em;
+  }
+  h4 > a {
+    color: $purple;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .container {
+    .card-content {
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+
+      h4 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $dark-purple;
+      }
+      p {
+        font-size: 14px;
+        text-align: left;
+        font-weight: 300;
+        word-break: break-word;
+        color: $dark-purple;
+      }
+      span {
+        font-weight: 300;
+        color: $purple;
+        font-size: 12px;
+        background: rgba($purple, 0.2);
+        border: none;
+        border-radius: 20px;
+        cursor: auto;
+        margin-bottom: 5px;
+      }
+    }
+    /*.card .card-footer i {
+      margin-right: 10px;
+    }
+    .card .card-footer .on {
+      color: #6A2DED;
+      cursor: pointer;
+      font-weight: 400 !important;
+      font-size: 0.8rem;
+    }*/
+
+    #view-all-works {
+      margin-top: 50px;
+      margin-bottom: 0;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      align-content: center;
+      flex-wrap: nowrap;
+
+      #view-git {
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+        font-stretch: normal;
+        font-style: normal;
+        text-align: center;
+        border: 1px solid $purple;
+        border-radius: 30px;
+        color: $purple;
+        text-decoration: none;
+        line-height: 40px;
+        letter-spacing: normal;
+        margin: 0 auto;
+        height: 40px;
+        width: 200px;
+        cursor: pointer;
+        -webkit-transition: all .2s ease-in-out;
+
+        .fa-github {
+          font-size: 20px;
+          margin-right: 15px;
+        }
+      }
+      #view-git:hover {
+        background: $purple;
+        color: $fog;
+      }
+    }
+  }
+}
+
+#portfolio {
+  background: $purple;
+
+  h3 {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: $fog;
+    font-weight: 700;
+  }
+  .subtitle.is-5{
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1em;
+    color: $fog;
+  }
+  .portfolio-container {
+    .card {
+      border-radius: 10px;
+      header {
+        .card-header-title {
+          display: block;
+          margin: 10px;
+        }
+        .portfolio-item-title {
+          font-weight: 500;
+          font-size: 1rem;
+          color: #151D38;
+        }
+        span {
+          margin: 1px;
+        }
+      }
+      .image img {
+        margin: 0 auto;
+      }
+      .card-content {
+        padding: 0;
+        .p-info {
+          padding: 1.2rem;
+          font-size: 14px;
+          text-align: left;
+          font-weight: 300;
+          word-break: break-word;
+          color: #151D38;
+        }
+      }
+      .card-footer {
+        font-size: 0.8rem;
+        .off {
+          color: rgba($purple, 0.5);
+          cursor: not-allowed;
+          margin: 10px auto;
+        }
+        .on {
+          color: $purple;
+          cursor: pointer;
+          margin: 10px auto;
+          font-weight: 400 !important;
+        }
+        a {
+          font-weight: 300;
+          color: $purple;
+          .fas {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#personal-skills {
+  margin-top: 150px;
+  .my-item {
+    width: 160px !important;
+    height: 150px !important;
+    background: $fog;
+    border: 1px solid $purple;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+
+    .fad {
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      color: $purple;
+    }
+  }
+}
+
+#outline {
+  margin-top: 250px;
+  .container.is-narrow {
+    background: $dark-purple;
+    max-width: 1200px;
+    border: none;
+    border-radius: 12px;
+    .box {
+      background: $dark-purple;
+      padding: 3.5rem 2rem;
+      margin-top: -8rem;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+      border: none;
+      border-radius: 12px;
+      .level-item {
+        color: $fog !important;
+        -webkit-box-align: center;
+        h1 {
+          color: $fog !important;
+        }
+        .button {
+          font-weight: 500 !important;
+          font-family: 'Poppins', sans-serif;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          border-radius: 30px;
+          border: 2px solid $purple;
+          text-decoration: none;
+          line-height: 40px;
+          letter-spacing: normal;
+          cursor: pointer;
+          background: transparent;
+          color: $fog;
+          padding: 20px 40px 20px 40px;
+          -webkit-transition: all .2s ease-in-out;
+        }
+        .button:hover {
+          background: $purple;
+        }
+      }
+    }
+  }
+  .call-to-action {
+
+    .container {
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      margin: 0 auto;
+      position: relative;
+      width: auto;
+    }
+  }
+}
+.section.is-primary {
+  background: $purple;
+  color: $fog;
+}
+
+.footer {
+  background: $purple;
+  color: $fog;
+  text-align: center;
+  .container {
+    .media-center {
+      margin: 0 auto;
+    }
+    #highlight{
+      max-width: 400px;
+      margin: 50px auto;
+      font-weight: 300;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    .icon {
+      font-size: 18px;
+      border: 2px solid rgba($fog, 0.5);
+      border-radius: 100%;
+      padding: 25px;
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .icon:hover{
+      background: $fog;
+      i {
+        color: $purple;
+      }
+    }
+    #copyright {
+      font-size: 0.8rem;
+      margin-top: 50px;
+    }
+  }
+  .made-by-bulma {
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 0.7rem;
+
+    a {
+      margin: 0 auto;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
