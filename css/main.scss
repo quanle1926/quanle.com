@@ -1,6 +1,7 @@
 $fog: #F8F8F8;
 $purple: #6A2DED;
 $dark-purple: #151D38;
+$tint: #64ffda;
 
 html, body {
   height: 100%;
@@ -83,7 +84,7 @@ body {
       color: #6A2DED !important;
     }
     .subtitle.is-3 {
-      color: #151D38 !important;
+      color: $dark-purple !important;
       font-size: 1.2rem;
       font-weight: 200;
       line-height: 2;
@@ -289,95 +290,187 @@ body {
   .subtitle.is-5{
     max-width: 600px;
     margin: 20px auto;
+    margin-bottom: 5px;
     font-size: 1em;
   }
-  h4 > a {
-    color: $purple;
-    font-weight: 500;
-    text-decoration: none;
+  p {
+    font-size: 0.8em;
+    a {
+      color: $purple;
+      font-weight: 500;
+      text-decoration: none;
+    }
   }
-  .container {
-    .card-content {
-      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-
-      h4 {
-        font-weight: 500;
-        font-size: 1.2rem;
-        color: $dark-purple;
-      }
-      p {
-        font-size: 14px;
-        text-align: left;
-        font-weight: 300;
-        word-break: break-word;
-        color: $dark-purple;
-      }
-      span {
-        font-weight: 300;
-        color: $purple;
-        font-size: 12px;
-        background: rgba($purple, 0.2);
-        border: none;
-        border-radius: 20px;
-        cursor: auto;
-        margin-bottom: 5px;
-      }
+  .services-container {
+    width: 90%;
+    .columns {
+      flex-wrap: wrap;
     }
-    /*.card .card-footer i {
-      margin-right: 10px;
-    }
-    .card .card-footer .on {
-      color: #6A2DED;
-      cursor: pointer;
-      font-weight: 400 !important;
-      font-size: 0.8rem;
-    }*/
+    .card {
+      border-radius: 5px;
+      transition: all .45s;
+      &:hover {
+        //transform: scale(1.05);
+        transform: translateY(-10px);
+        cursor: ne-resize;
+      }
+      .card-image {
+        .figcaption-title {
+          h4 {
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
+            font-stretch: normal;
+            font-style: normal;
+            text-align: center;
+            color: $fog;
+            text-decoration: none;
+            line-height: 40px;
+            letter-spacing: normal;
+            margin: 0 auto;
+            height: 40px;
+            width: 120px;
+            -webkit-transition: all 0.2s ease-in-out;
+          }
 
-    #view-all-works {
-      margin-top: 50px;
-      margin-bottom: 0;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      align-content: center;
-      flex-wrap: nowrap;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          justify-content: center;
+          padding: 0 3rem;
+          z-index: 1;
+          position: absolute;
+          //background: rgba($dark-purple, .7);
+          color: $fog;
+          font-size: 1rem;
+          text-align: center;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          -webkit-transition: .45s ease-in-out;
+          transition: .45s ease-in-out;
+          &:hover {
+            opacity: 0;
+          }
+        }
+        .figcaption-description {
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          justify-content: center;
+          padding: 0 3rem;
+          z-index: 1;
+          position: absolute;
+          background: $dark-purple;
+          color: $fog;
+          font-size: 1rem;
+          text-align: center;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          -webkit-transition: .45s ease-in-out;
+          transition: .45s ease-in-out;
+          &:hover {
+            opacity: 1;
+          }
 
-      #view-git {
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.8rem;
-        font-stretch: normal;
-        font-style: normal;
-        text-align: center;
-        border: 1px solid $purple;
-        border-radius: 30px;
-        color: $purple;
-        text-decoration: none;
-        line-height: 40px;
-        letter-spacing: normal;
-        margin: 0 auto;
-        height: 40px;
-        width: 200px;
-        cursor: pointer;
-        -webkit-transition: all .2s ease-in-out;
-
-        .fa-github {
-          font-size: 20px;
-          margin-right: 15px;
+          a {
+            color: $fog;
+            border: 1.5px solid $purple;
+            background: transparent;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-stretch: normal;
+            font-style: normal;
+            border-radius: 30px;
+            text-decoration: none;
+            line-height: 40px;
+            letter-spacing: normal;
+            height: 40px;
+            width: 130px;
+            cursor: pointer;
+            margin:  0 auto;
+            -webkit-transition: all 0.2s ease-in-out;
+          }
         }
       }
-      #view-git:hover {
-        background: $purple;
-        color: $fog;
+      .card-header {
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        padding: 20px 0 0 0;
+        margin: 30px 0 30px 0;
+        span {
+          margin: 1px;
+        }
       }
+      .card-content {
+        padding: 0;
+        .card-header-title {
+          display: block;
+          padding: 1rem 1.8rem 1rem 1.8rem;
+          .portfolio-item-title {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: $purple;
+            a {
+              color: $purple;
+              &:hover {
+                color: $purple;
+              }
+            }
+          }
+        }
+        .p-info {
+          padding: 0 1.8rem 1.8rem 1.8rem;
+          margin-bottom: 3.5rem;
+          font-size: 14px;
+          text-align: left;
+          word-break: break-word;
+          box-sizing: content-box;
+          color: $dark-purple;
+          -webkit-font-smoothing: antialiased;
+        }
+        .project-tech-list {
+          display: flex;
+          font-size: 0.8em;
+          font-weight: 300;
+          align-items: flex-end;
+          -webkit-box-flex: 1;
+          flex-grow: 1;
+          flex-wrap: wrap;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          padding: 1rem 1rem 1.8rem 1.8rem;
+          list-style: none;
+          li {
+            margin-right: 15px;
+            color: rgba($purple, .6);
+          }
+        }
+      }
+    }
+    .card:hover > .card-image .figcaption-description {
+      opacity: 1;
     }
   }
 }
 
 #portfolio {
   background: $purple;
-
   h3 {
     max-width: 700px;
     margin: 0 auto;
@@ -392,20 +485,57 @@ body {
     color: $fog;
   }
   .portfolio-container {
+    width: 90%;
+    .columns {
+      flex-wrap: wrap;
+    }
     .card {
-      border-radius: 10px;
-      header {
-        .card-header-title {
-          display: block;
-          margin: 10px;
-        }
-        .portfolio-item-title {
-          font-weight: 500;
-          font-size: 1rem;
-          color: #151D38;
-        }
+      border-radius: 5px;
+      background: $dark-purple;
+      transition: all 1s;
+      &:hover {
+        //transform: scale(1.05);
+        transform: translateY(-10px);
+        cursor: ne-resize;
+      }
+      .card-header {
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        padding: 20px 0 0 0;
+        margin: 30px 0 30px 0;
         span {
           margin: 1px;
+        }
+        .project-folder {
+          position: absolute;
+          left: 1.8rem;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .project-links {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          padding-right: 10px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+          }
+          a {
+            color: #ccd6f6;
+            &:hover {
+              color: #64ffda;
+            }
+          }
         }
       }
       .image img {
@@ -413,36 +543,89 @@ body {
       }
       .card-content {
         padding: 0;
+        .card-header-title {
+          display: block;
+          padding: 0 1.8rem 1em 1.8rem;
+          .portfolio-item-title {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: #ccd6f6;
+            a {
+              color: #ccd6f6;
+              &:hover {
+                color: $tint;
+              }
+            }
+          }
+        }
         .p-info {
-          padding: 1.2rem;
+          padding: 0 1.8rem 1.8rem 1.8rem;
+          margin-bottom: 1.8rem;
           font-size: 14px;
           text-align: left;
-          font-weight: 300;
           word-break: break-word;
-          color: #151D38;
+          box-sizing: content-box;
+          color: #8892b0;
+          -webkit-font-smoothing: antialiased;
         }
-      }
-      .card-footer {
-        font-size: 0.8rem;
-        .off {
-          color: rgba($purple, 0.5);
-          cursor: not-allowed;
-          margin: 10px auto;
-        }
-        .on {
-          color: $purple;
-          cursor: pointer;
-          margin: 10px auto;
-          font-weight: 400 !important;
-        }
-        a {
+        .project-tech-list {
+          display: flex;
+          font-size: 0.8em;
           font-weight: 300;
-          color: $purple;
-          .fas {
-            margin-right: 10px;
+          align-items: flex-end;
+          -webkit-box-flex: 1;
+          flex-grow: 1;
+          flex-wrap: wrap;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          padding: 1rem 1rem 1.8rem 1.8rem;
+          list-style: none;
+          li {
+            margin-right: 15px;
+            color: #8892b0;
           }
         }
       }
+    }
+  }
+  #view-all-works {
+    margin-top: 50px;
+    margin-bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: nowrap;
+
+    #view-git {
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: center;
+      border: 1px solid $fog;
+      border-radius: 30px;
+      color: $purple;
+      text-decoration: none;
+      line-height: 40px;
+      letter-spacing: normal;
+      margin: 0 auto;
+      height: 40px;
+      width: 200px;
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+
+      .fa-github {
+        font-size: 20px;
+        margin-right: 15px;
+      }
+    }
+    #view-git:hover {
+      background: $purple;
+      color: $fog;
     }
   }
 }
@@ -501,7 +684,7 @@ body {
           font-stretch: normal;
           font-style: normal;
           border-radius: 30px;
-          border: 2px solid $purple;
+          border: 2px solid $tint;
           text-decoration: none;
           line-height: 40px;
           letter-spacing: normal;
@@ -512,7 +695,8 @@ body {
           -webkit-transition: all .2s ease-in-out;
         }
         .button:hover {
-          background: $purple;
+          background: $tint;
+          color: $dark-purple;
         }
       }
     }
